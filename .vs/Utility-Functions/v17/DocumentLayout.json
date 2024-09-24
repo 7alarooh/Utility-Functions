@@ -17,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
@@ -27,7 +27,7 @@
               "RelativeDocumentMoniker": "Utility-Functions\\Program.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\cSharp2024\\Utility-Functions\\Utility-Functions\\Program.cs",
               "RelativeToolTip": "Utility-Functions\\Program.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAQwIIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAQwIEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T11:49:15.483Z",
               "EditorCaption": ""
@@ -46,7 +46,7 @@
         "Y": 258,
         "Width": 880,
         "Height": 783,
-        "WindowState": 2
+        "WindowState": 0
       },
       "DocumentGroups": [
         {
@@ -61,7 +61,7 @@
               "RelativeDocumentMoniker": "..\\FirstConsoleApp_19_8\\FirstConsoleApp_19_8\\Program.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\cSharp2024\\FirstConsoleApp_19_8\\FirstConsoleApp_19_8\\Program.cs",
               "RelativeToolTip": "..\\FirstConsoleApp_19_8\\FirstConsoleApp_19_8\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAM0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T12:24:31.997Z",
               "EditorCaption": ""

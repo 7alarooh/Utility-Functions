@@ -127,7 +127,14 @@ namespace Utility_Functions
             }
             else { Console.WriteLine("The input is not a valid intager ! "); }
         }
+        static int factorialCalculator(int num)
+        {
+            //to check if number less than 2 
+            if (num <= 1) { return 1; }
 
+            //here using call self-function to get result until get num == 1
+            return num * factorialCalculator(num - 1);
+        }
 
     }
 }
