@@ -144,7 +144,31 @@ namespace Utility_Functions
                                 bool isPrime = PrimeNoChecker(num1);
         Console.WriteLine($"The number {num1} is prime: {isPrime}");
                             }
-                            else { Console.WriteLine("The input is not a valid intager ! "); }}
+                            else { Console.WriteLine("The input is not a valid intager ! "); }
+        }
+        //      Prime Number Checker     //
+        static bool PrimeNoChecker(int num)
+        {
+            double squareRoot = Math.Sqrt(num);
+            bool isPrime = true;
+            // to check the input value if 0 or 1 because it is not considered
+            if (num <= 1) { isPrime = false; }
+            //to check if input number 2
+            else if (num == 2) { isPrime = true; }
+            // to check input number isdivisble by 2, it means it is even
+            else if (num % 2 == 0) { isPrime = false; }
+            else
+            {
+                //using looping to get all less than input number until 3
+                for (int i = 3; i <= squareRoot; i += 2)
+                {
+                    //using if statement to check if there not remain 
+                    if (num % i == 0) isPrime = false;
+                    else { isPrime = true; }
+                }
+            }
+            return isPrime;
+        }
 
     }
 }
