@@ -8,7 +8,7 @@ namespace Utility_Functions
         {
             MainMenu();
         }
-        static void MainMenu() 
+        static void MainMenu()
         {
             bool exit = false;
             do
@@ -45,7 +45,7 @@ namespace Utility_Functions
                             break;
                         //to check if prime number or not
                         case 2:
-                            //PrimeNumberChecker();
+                            PrimeNumberChecker();
                             break;
                         //get Fibonacci Sequence Generator
                         case 3:
@@ -66,7 +66,7 @@ namespace Utility_Functions
                         //to count vowel letters in any text
                         case 7:
                             //TemperatureConverter();
-                                break;
+                            break;
                         //to convert degree of temperature (f>>c) or (c>>f)
                         case 8:
                             //TemperatureConverter();
@@ -134,6 +134,40 @@ namespace Utility_Functions
 
             //here using call self-function to get result until get num == 1
             return num * factorialCalculator(num - 1);
+        }
+        static void PrimeNumberChecker()
+        {
+            Console.WriteLine("Enter the number:");
+                            string input1 = Console.ReadLine();
+                            if (int.TryParse(input1, out int num1))
+                            {
+                                bool isPrime = PrimeNoChecker(num1);
+        Console.WriteLine($"The number {num1} is prime: {isPrime}");
+                            }
+                            else { Console.WriteLine("The input is not a valid intager ! "); }
+        }
+        //      Prime Number Checker     //
+        static bool PrimeNoChecker(int num)
+        {
+            double squareRoot = Math.Sqrt(num);
+            bool isPrime = true;
+            // to check the input value if 0 or 1 because it is not considered
+            if (num <= 1) { isPrime = false; }
+            //to check if input number 2
+            else if (num == 2) { isPrime = true; }
+            // to check input number isdivisble by 2, it means it is even
+            else if (num % 2 == 0) { isPrime = false; }
+            else
+            {
+                //using looping to get all less than input number until 3
+                for (int i = 3; i <= squareRoot; i += 2)
+                {
+                    //using if statement to check if there not remain 
+                    if (num % i == 0) isPrime = false;
+                    else { isPrime = true; }
+                }
+            }
+            return isPrime;
         }
 
     }
