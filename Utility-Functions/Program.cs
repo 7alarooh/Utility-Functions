@@ -57,7 +57,7 @@ namespace Utility_Functions
                             break;
                         //to get number into digitals and sum them 
                         case 5:
-                            //Sum_ofDigits();
+                            Sum_ofDigits();
                             break;
                         //to get average numbers
                         case 6:
@@ -246,6 +246,33 @@ namespace Utility_Functions
 
             }
             return result.Max();
+        }
+        //to get number into digitals and sum them 
+        static void Sum_ofDigits()
+        {
+                Console.WriteLine("Enter the  number :");
+                string input3 = Console.ReadLine();
+
+                if (int.TryParse(input3, out int num3))
+                {
+                    Console.WriteLine($"Sum of Digits:{num3} = " + SumOfDigits(num3));
+                }
+                else { Console.WriteLine("The input is not a valid intager ! "); }
+            }
+        //   Sum of Digits           //
+        static int SumOfDigits(int num)
+        {
+            //to conver to can be able to devide it
+            string numToString = num.ToString();
+            int result = 0;
+            foreach (char c in numToString) //here take each char in string
+            {
+                if (char.IsDigit(c))
+                {
+                    result += c - '0'; //the char value is not like int number, so using '0'=48, then do '1','2','4' >> result=(49-48)+(50-48)+(52-48)
+                }
+            }
+            return result;
         }
     }
 }
