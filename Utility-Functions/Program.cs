@@ -61,7 +61,7 @@ namespace Utility_Functions
                             break;
                         //to get average numbers
                         case 6:
-                            //ArrayAverage();
+                            ArrayAverage();
                             break;
                         //to count vowel letters in any text
                         case 7:
@@ -273,6 +273,40 @@ namespace Utility_Functions
                 }
             }
             return result;
+        }
+        //to get average numbers
+        static void ArrayAverage() {
+            Console.WriteLine("Enter the  number of digites :");
+            string input4 = Console.ReadLine();
+            if (int.TryParse(input4, out int noDigites))
+            {
+
+                double[] numArray = new double[noDigites];
+                
+                int currentIndex = 0;
+                while (currentIndex < numArray.Length)
+                {
+                    Console.Write($"Enter a number {currentIndex + 1}");
+                    string inputArr = Console.ReadLine();
+                    if (double.TryParse(inputArr, out double resultArr))
+                    {
+                        numArray[currentIndex] = resultArr;
+                        currentIndex++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("The input is not a valid number ! ");
+                    }
+
+                }
+                Console.WriteLine("You've successfullynfilled the array with the following numbers: ");
+                foreach (double NUM in numArray) { Console.Write(" " + NUM); }
+                Console.WriteLine();
+
+                Console.WriteLine($"the average = " + CalculateAverge(numArray));
+
+            }
+            else { Console.WriteLine(" The input is not a valid intager number !"); }
         }
     }
 }
