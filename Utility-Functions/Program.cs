@@ -186,6 +186,30 @@ Console.WriteLine("Enter the number to get Fibonacci Sequence Generator:");
 }
                             else { Console.WriteLine("The input is not a valid intager ! "); }
         }
+        //      Fibonacci Sequence Generator     //
+        static List<int> FibonacciSequence(int num)
+        {
+            int num1 = 0, num2 = 1, num3;
+            List<int> Fibonacci = new List<int>();
 
+            // 
+
+
+            if (num <= 0) { return Fibonacci; }
+            // to add 0 and 1 in list
+            Fibonacci.Add(num1);
+            Fibonacci.Add(num2);
+
+            //looping to do mathmetic
+            for (int i = 3; i <= num; i++)
+            {
+                num3 = num1 + num2;
+                Fibonacci.Add(num3);
+                num1 = num2;
+                num2 = num3;
+
+            }
+            return Fibonacci;
+        }
     }
 }
