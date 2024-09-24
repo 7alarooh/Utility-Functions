@@ -5,9 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{79C33DD0-3C88-40FE-80C9-E21EE545F46B}|Utility-Functions\\Utility-Functions.csproj|c:\\users\\lenovo\\source\\repos\\csharp2024\\utility-functions\\utility-functions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79C33DD0-3C88-40FE-80C9-E21EE545F46B}|Utility-Functions\\Utility-Functions.csproj|solutionrelative:utility-functions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\source\\repos\\cSharp2024\\FirstConsoleApp_19_8\\FirstConsoleApp_19_8\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,43 +24,9 @@
               "RelativeDocumentMoniker": "Utility-Functions\\Program.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\cSharp2024\\Utility-Functions\\Utility-Functions\\Program.cs",
               "RelativeToolTip": "Utility-Functions\\Program.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAUwJQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAowHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T11:49:15.483Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "8d6d1f0a-527b-4dd4-8c37-de85afddea7c",
-        "Display": 0,
-        "X": 608,
-        "Y": 258,
-        "Width": 880,
-        "Height": 783,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\cSharp2024\\FirstConsoleApp_19_8\\FirstConsoleApp_19_8\\Program.cs",
-              "RelativeDocumentMoniker": "..\\FirstConsoleApp_19_8\\FirstConsoleApp_19_8\\Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\cSharp2024\\FirstConsoleApp_19_8\\FirstConsoleApp_19_8\\Program.cs",
-              "RelativeToolTip": "..\\FirstConsoleApp_19_8\\FirstConsoleApp_19_8\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAM0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T12:24:31.997Z",
               "EditorCaption": ""
             }
           ]

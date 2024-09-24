@@ -49,7 +49,7 @@ namespace Utility_Functions
                             break;
                         //get Fibonacci Sequence Generator
                         case 3:
-                            //FibonacciSequenceGenerator();
+                            FibonacciSequenceGenerator();
                             break;
                         // to get GCD between two numbers
                         case 4:
@@ -138,13 +138,13 @@ namespace Utility_Functions
         static void PrimeNumberChecker()
         {
             Console.WriteLine("Enter the number:");
-                            string input1 = Console.ReadLine();
-                            if (int.TryParse(input1, out int num1))
-                            {
-                                bool isPrime = PrimeNoChecker(num1);
-        Console.WriteLine($"The number {num1} is prime: {isPrime}");
-                            }
-                            else { Console.WriteLine("The input is not a valid intager ! "); }
+            string input1 = Console.ReadLine();
+            if (int.TryParse(input1, out int num1))
+            {
+                bool isPrime = PrimeNoChecker(num1);
+                Console.WriteLine($"The number {num1} is prime: {isPrime}");
+            }
+            else { Console.WriteLine("The input is not a valid intager ! "); }
         }
         //      Prime Number Checker     //
         static bool PrimeNoChecker(int num)
@@ -169,6 +169,47 @@ namespace Utility_Functions
             }
             return isPrime;
         }
+        //get Fibonacci Sequence Generator
+       static void FibonacciSequenceGenerator()
+        {
 
+Console.WriteLine("Enter the number to get Fibonacci Sequence Generator:");
+                            string input2 = Console.ReadLine();
+                            if (int.TryParse(input2, out int num2))
+                            {
+                                List<int> fibonacciNumbers = FibonacciSequence(num2);
+        Console.WriteLine("Fibonacci Sequence:");
+                                foreach (var number in fibonacciNumbers)
+                                {
+                                    Console.Write(number + " ");
+                                }
+}
+                            else { Console.WriteLine("The input is not a valid intager ! "); }
+        }
+        //      Fibonacci Sequence Generator     //
+        static List<int> FibonacciSequence(int num)
+        {
+            int num1 = 0, num2 = 1, num3;
+            List<int> Fibonacci = new List<int>();
+
+            // 
+
+
+            if (num <= 0) { return Fibonacci; }
+            // to add 0 and 1 in list
+            Fibonacci.Add(num1);
+            Fibonacci.Add(num2);
+
+            //looping to do mathmetic
+            for (int i = 3; i <= num; i++)
+            {
+                num3 = num1 + num2;
+                Fibonacci.Add(num3);
+                num1 = num2;
+                num2 = num3;
+
+            }
+            return Fibonacci;
+        }
     }
 }
