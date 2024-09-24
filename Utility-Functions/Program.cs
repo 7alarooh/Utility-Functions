@@ -65,11 +65,11 @@ namespace Utility_Functions
                             break;
                         //to count vowel letters in any text
                         case 7:
-                            TemperatureConverter();
+                            CountVowelsInString();
                             break;
                         //to convert degree of temperature (f>>c) or (c>>f)
                         case 8:
-                            //TemperatureConverter();
+                            TemperatureConverter();
                             break;
 
                         //to count number of words in any input text 
@@ -322,7 +322,7 @@ namespace Utility_Functions
 
         }
 
-        static void TemperatureConverter() {
+        static void CountVowelsInString() {
             Console.WriteLine("Enter your text:");
             string textToCheck = Console.ReadLine();
             Console.WriteLine("There is/ are : " + toGetNoVowelInText(textToCheck) + " vowel letter/s");
@@ -342,6 +342,43 @@ namespace Utility_Functions
                 }
             }
             return textToCheck;
+
+        }
+        static void TemperatureConverter() {
+            Console.WriteLine("converts a temperature: \n 1. from Celsius to Fahrenheit \n 2.from Fahrenheit to Celsius ");
+            Console.Write("select to do process : ");
+            string inpuT = Console.ReadLine();
+
+            if (int.TryParse(inpuT, out int choose))
+            {
+                Console.WriteLine("temperature after convert is :" + toConvertTem(choose));
+            }
+            else { Console.WriteLine("The input is not a valid intager ! "); }
+        }
+        //  Temperature Converter //
+        static double toConvertTem(int choose)
+        {
+            double result = 0;
+            //to do 2 functions in one
+            switch (choose)
+            {
+                case 1:
+                    Console.Write("enter  degree of temprature :");
+                    double degree = double.Parse(Console.ReadLine());
+                    result = degree * 9 / 5 + 32;
+                    break;
+
+                case 2:
+                    Console.Write("enter  degree of temprature :");
+                    double degree1 = double.Parse(Console.ReadLine());
+                    result = (degree1 - 32) * 5 / 9;
+                    break;
+
+                default:
+                    Console.WriteLine("wrong choose!");
+                    break;
+            }
+            return result;
 
         }
     }
