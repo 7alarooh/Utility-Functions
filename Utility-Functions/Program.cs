@@ -307,6 +307,19 @@ namespace Utility_Functions
 
             }
             else { Console.WriteLine(" The input is not a valid intager number !"); }
+
+        }
+        //     Array Average                     //
+        static double CalculateAverge(double[] numbers)
+        {
+            if (numbers.Length == 0) return 0;
+            double sum = 0.0;
+            foreach (int num in numbers)
+            {
+                sum += num;
+            }
+            return sum / numbers.Length;
+
         }
     }
 }
