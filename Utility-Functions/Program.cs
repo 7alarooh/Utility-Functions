@@ -53,7 +53,7 @@ namespace Utility_Functions
                             break;
                         // to get GCD between two numbers
                         case 4:
-                            //GreatestCommonDivisor();
+                            GreatestCommonDivisor();
                             break;
                         //to get number into digitals and sum them 
                         case 5:
@@ -170,21 +170,21 @@ namespace Utility_Functions
             return isPrime;
         }
         //get Fibonacci Sequence Generator
-       static void FibonacciSequenceGenerator()
+        static void FibonacciSequenceGenerator()
         {
 
-Console.WriteLine("Enter the number to get Fibonacci Sequence Generator:");
-                            string input2 = Console.ReadLine();
-                            if (int.TryParse(input2, out int num2))
-                            {
-                                List<int> fibonacciNumbers = FibonacciSequence(num2);
-        Console.WriteLine("Fibonacci Sequence:");
-                                foreach (var number in fibonacciNumbers)
-                                {
-                                    Console.Write(number + " ");
-                                }
-}
-                            else { Console.WriteLine("The input is not a valid intager ! "); }
+            Console.WriteLine("Enter the number to get Fibonacci Sequence Generator:");
+            string input2 = Console.ReadLine();
+            if (int.TryParse(input2, out int num2))
+            {
+                List<int> fibonacciNumbers = FibonacciSequence(num2);
+                Console.WriteLine("Fibonacci Sequence:");
+                foreach (var number in fibonacciNumbers)
+                {
+                    Console.Write(number + " ");
+                }
+            }
+            else { Console.WriteLine("The input is not a valid intager ! "); }
         }
         //      Fibonacci Sequence Generator     //
         static List<int> FibonacciSequence(int num)
@@ -210,6 +210,42 @@ Console.WriteLine("Enter the number to get Fibonacci Sequence Generator:");
 
             }
             return Fibonacci;
+        }
+        // to get GCD between two numbers
+        static void GreatestCommonDivisor()
+        {
+                        
+                            Console.WriteLine("Enter the First number :");
+                            string inPut1 = Console.ReadLine();
+        Console.WriteLine("Enter the Secound number :");
+                            string inPut2 = Console.ReadLine();
+                            if (int.TryParse(inPut1, out int number1) && int.TryParse(inPut2, out int number2))
+                            {
+                                Console.WriteLine("Greatest Common Divisor:" + FindGCD(number1, number2));
+                            }
+                            else { Console.WriteLine("The input is not a valid intager ! "); }
+}
+
+        //    Greatest Common Divisor (GCD) //
+        static int FindGCD(int num1, int num2)
+        {
+            List<int> result = new List<int>();
+
+            //to know which one is smaller to use in looping to get GCD
+            int smallestNo;
+            if (num1 > num2) smallestNo = num2;
+            else smallestNo = num1;
+
+            for (int i = 1; i < smallestNo; i++)
+            {
+                //here to check if numbers not remaineder and common between them 
+                if (num1 % i == 0 && num2 % i == 0)
+                {
+                    result.Add(i);
+                }
+
+            }
+            return result.Max();
         }
     }
 }
