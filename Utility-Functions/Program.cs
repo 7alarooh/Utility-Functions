@@ -74,7 +74,7 @@ namespace Utility_Functions
 
                         //to count number of words in any input text 
                         case 9:
-                            //WordCount();
+                            WordCount();
                             break;
 
                         //to capitalize the first letter in each word
@@ -380,6 +380,21 @@ namespace Utility_Functions
             }
             return result;
 
+        }
+        static void WordCount() {
+            Console.WriteLine("Enter your text:");
+            string textToCount = Console.ReadLine();
+            Console.WriteLine("There is/ are : " + toGetNoWords(textToCount) + " word/s");
+        }
+        //   Word Count                     //
+        static int toGetNoWords(string text)
+        {
+
+            int textToCheck = 0;
+            if (string.IsNullOrEmpty(text))
+                return 0;
+            string[] words = text.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);// to remve blank or space in text to get clear array
+            return textToCheck = words.Length;
         }
     }
 }
