@@ -65,7 +65,7 @@ namespace Utility_Functions
                             break;
                         //to count vowel letters in any text
                         case 7:
-                            //TemperatureConverter();
+                            TemperatureConverter();
                             break;
                         //to convert degree of temperature (f>>c) or (c>>f)
                         case 8:
@@ -319,6 +319,29 @@ namespace Utility_Functions
                 sum += num;
             }
             return sum / numbers.Length;
+
+        }
+
+        static void TemperatureConverter() {
+            Console.WriteLine("Enter your text:");
+            string textToCheck = Console.ReadLine();
+            Console.WriteLine("There is/ are : " + toGetNoVowelInText(textToCheck) + " vowel letter/s");
+        }
+        //     Count Vowels in a String         //
+        static int toGetNoVowelInText(string text)
+        {
+            int textToCheck = 0;
+            char[] vowels = { 'a', 'e', 'i', 'o', 'u' };//put all vowel letters in array
+            text = text.ToLower(); // make all text low Case letter
+
+            foreach (char c in text) // take each letter(char) in text 
+            {
+                if (Array.Exists(vowels, v => v == c)) //to check if char in text is vowel or not by comparing
+                {
+                    textToCheck++;
+                }
+            }
+            return textToCheck;
 
         }
     }
