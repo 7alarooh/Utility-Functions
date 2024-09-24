@@ -41,7 +41,7 @@ namespace Utility_Functions
                     {
                         //to get factorial of a number
                         case 1:
-                            //FactorialCalculator();
+                            FactorialCalculator();
                             break;
                         //to check if prime number or not
                         case 2:
@@ -112,5 +112,22 @@ namespace Utility_Functions
             }
             while (!exit);
         }
+
+        static void FactorialCalculator() {
+            Console.WriteLine("Enter the number:");
+            //int num = int.Parse(Console.ReadLine());
+            string input = Console.ReadLine();
+            if (int.TryParse(input, out int num) && num >= 0)
+            {
+                if (num < 20)
+                {
+                    Console.WriteLine($"the factorial of {num} is " + factorialCalculator(num));
+                }
+                else { Console.WriteLine("Wroning: The factorial of " + num + " will be a very large number !"); }
+            }
+            else { Console.WriteLine("The input is not a valid intager ! "); }
+        }
+
+
     }
 }
