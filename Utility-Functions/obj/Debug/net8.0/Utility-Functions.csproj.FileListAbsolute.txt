@@ -1,0 +1,15 @@
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\bin\Debug\net8.0\Utility-Functions.exe
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\bin\Debug\net8.0\Utility-Functions.deps.json
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\bin\Debug\net8.0\Utility-Functions.runtimeconfig.json
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\bin\Debug\net8.0\Utility-Functions.dll
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\bin\Debug\net8.0\Utility-Functions.pdb
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\obj\Debug\net8.0\Utility-Functions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\obj\Debug\net8.0\Utility-Functions.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\obj\Debug\net8.0\Utility-Functions.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\obj\Debug\net8.0\Utility-Functions.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\obj\Debug\net8.0\Utility-Functions.sourcelink.json
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\obj\Debug\net8.0\Utility-Functions.dll
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\obj\Debug\net8.0\refint\Utility-Functions.dll
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\obj\Debug\net8.0\Utility-Functions.pdb
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\obj\Debug\net8.0\Utility-Functions.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\cSharp2024\Utility-Functions\Utility-Functions\obj\Debug\net8.0\ref\Utility-Functions.dll
