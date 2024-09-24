@@ -79,7 +79,7 @@ namespace Utility_Functions
 
                         //to capitalize the first letter in each word
                         case 10:
-                            //StringCapitalization();
+                            StringCapitalization();
                             break;
                         //Exit
                         case 11:
@@ -395,6 +395,36 @@ namespace Utility_Functions
                 return 0;
             string[] words = text.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);// to remve blank or space in text to get clear array
             return textToCheck = words.Length;
+        }
+
+        static void StringCapitalization()
+        {
+            Console.WriteLine("Enter your text:");
+            string inputText = Console.ReadLine();
+            Console.WriteLine(CapitalizeWords(inputText));
+        }
+        //    String Capitalization             //
+        static string CapitalizeWords(string text)
+        {
+
+            if (string.IsNullOrEmpty(text)) //to check if not null 
+                return text;
+
+            string[] words = text.Split(' '); // to cut long text into words in string array
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i].Length > 0) //if the word not empty value
+
+                {
+                    words[i] = char.ToUpper(words[i][0]) + words[i].Substring(1).ToLower();//here take each word to spilt
+                                                                                           //to take the first char to make upper
+                                                                                           //and make sure the rest inlowercase
+
+                }
+            }
+            // Join all the words back into a single string with spaces in between.
+            // Assign the result to 'text' and return it.
+            return text = string.Join(" ", words);
         }
     }
 }
