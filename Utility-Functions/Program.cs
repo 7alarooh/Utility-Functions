@@ -225,5 +225,27 @@ namespace Utility_Functions
                             }
                             else { Console.WriteLine("The input is not a valid intager ! "); }
 }
+
+        //    Greatest Common Divisor (GCD) //
+        static int FindGCD(int num1, int num2)
+        {
+            List<int> result = new List<int>();
+
+            //to know which one is smaller to use in looping to get GCD
+            int smallestNo;
+            if (num1 > num2) smallestNo = num2;
+            else smallestNo = num1;
+
+            for (int i = 1; i < smallestNo; i++)
+            {
+                //here to check if numbers not remaineder and common between them 
+                if (num1 % i == 0 && num2 % i == 0)
+                {
+                    result.Add(i);
+                }
+
+            }
+            return result.Max();
+        }
     }
 }
