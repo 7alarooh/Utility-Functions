@@ -57,7 +57,7 @@ namespace Utility_Functions
                             break;
                         //to get number into digitals and sum them 
                         case 5:
-                            //Sum_ofDigits();
+                            Sum_ofDigits();
                             break;
                         //to get average numbers
                         case 6:
@@ -247,5 +247,17 @@ namespace Utility_Functions
             }
             return result.Max();
         }
+        //to get number into digitals and sum them 
+        static void Sum_ofDigits()
+        {
+                Console.WriteLine("Enter the  number :");
+                string input3 = Console.ReadLine();
+
+                if (int.TryParse(input3, out int num3))
+                {
+                    Console.WriteLine($"Sum of Digits:{num3} = " + SumOfDigits(num3));
+                }
+                else { Console.WriteLine("The input is not a valid intager ! "); }
+            }
     }
 }
